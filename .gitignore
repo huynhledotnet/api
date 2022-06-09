@@ -3,3 +3,4 @@
 ################################################################################
 
 /ProductServices/.dockerignore
+/ProductServices/ProductServices/obj

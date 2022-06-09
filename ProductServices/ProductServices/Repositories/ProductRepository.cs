@@ -32,7 +32,9 @@ WHERE product_id = @productId";
                 };
 
                 var product = await connection.QueryAsync<ProductDetailDTO>(query, param: parameters);
-                return product.SingleOrDefault();
+                var result = product.SingleOrDefault();
+                result.BrandId = 99999999;
+                return result;
             }
         }
     }
